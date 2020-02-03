@@ -29,4 +29,4 @@ $ python3 test_inference.py --encoder=b2 --model=Unet --fold=0 --batch_size=8
 ```
 
 #### Further Improvements
-To get higher score try to train with BCEDICE Loss, add to segmentation model another classification head.
+To get higher score try to train model with BCEDICE Loss, add to segmentation model another classification head.
