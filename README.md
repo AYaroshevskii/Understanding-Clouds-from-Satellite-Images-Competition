@@ -1,5 +1,5 @@
 # Understanding-Clouds-from-Satellite-Images-Competition
-Simple solution (41th private leaderboard) of Understanding [Clouds from Satellite Images competition](https://www.kaggle.com/c/understanding_cloud_organization)
+Simple solution (41th private leaderboard) of [Understanding Clouds from Satellite Images competition](https://www.kaggle.com/c/understanding_cloud_organization)
 
 #### Model Description
 Final solution is based on ensembling of two types of models - FPN and Unet with different backbones (efficientnet and densenet)<br/>
