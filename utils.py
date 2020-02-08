@@ -9,17 +9,18 @@ from matplotlib.pyplot import imread
 import torch
 
 
-#Save and load model checkpoint
+# Save and load model checkpoint
 def save_checkpoint(checkpoint_path, model, optimizer):
-    state = {'state_dict': model.state_dict()}
+    state = {"state_dict": model.state_dict()}
     if optimizer:
-        state['optimizer'] = optimizer.state_dict()
+        state["optimizer"] = optimizer.state_dict()
     torch.save(state, checkpoint_path)
-    print('model saved to %s' % checkpoint_path)
-    
+    print("model saved to %s" % checkpoint_path)
+
+
 def load_checkpoint(checkpoint_path, model, optimizer):
     state = torch.load(checkpoint_path)
-    model.load_state_dict(state['state_dict'])
+    model.load_state_dict(state["state_dict"])
     if optimizer:
-        optimizer.load_state_dict(state['optimizer'])
-    print('model loaded from %s' % checkpoint_path)
+        optimizer.load_state_dict(state["optimizer"])
+    print("model loaded from %s" % checkpoint_path)
